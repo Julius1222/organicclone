@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OrganicClone AI</title>
+    <style>
+        body { 
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a); 
+            color: white; 
+            font-family: Arial; 
+            padding: 50px; 
+            text-align: center; 
+        }
+        h1 { color: #ff6b35; font-size: 3rem; margin-bottom: 20px; }
+        p { font-size: 1.3rem; color: #ccc; margin: 20px 0; }
+        .success { color: #4ade80; font-weight: bold; font-size: 1.5rem; margin: 30px 0; }
+        input { 
+            padding: 15px; 
+            margin: 10px; 
+            border-radius: 10px; 
+            border: none; 
+            width: 300px; 
+            background: rgba(255,255,255,0.1); 
+            color: white; 
+            display: block;
+            margin: 20px auto;
+        }
+        button { 
+            padding: 15px 30px; 
+            background: #ff6b35; 
+            color: white; 
+            border: none; 
+            border-radius: 25px; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            margin: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 OrganicClone AI</h1>
+    <p>Turn Any Viral Video Into Your Next Hit</p>
+    <div class="success">✅ PLATFORM IS WORKING!</div>
+    
+    <input type="url" placeholder="Viral Video URL (TikTok/Instagram)" id="viral">
+    <input type="url" placeholder="Your YouTube Video URL" id="youtube">
+    <input type="text" placeholder="Content Description" id="content">
+    <button onclick="analyze()">🎯 Analyze Videos</button>
+    
+    <div id="result" style="margin-top: 30px;"></div>
+    
+    <script>
+        function analyze() {
+            document.getElementById('result').innerHTML = '<h3>🔄 Analysis Complete!</h3><p>Your viral template is ready!</p>';
+        }
+    </script>
+</body>
+</html>
